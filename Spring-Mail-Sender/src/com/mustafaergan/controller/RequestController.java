@@ -22,7 +22,7 @@ public class RequestController {
 	MailService mailService;
 
 	@RequestMapping(value = "/{param1}/{param2}", method = RequestMethod.GET)
-	public String printWelcome(ModelMap model, @PathVariable("param1") String eMailAdress,@PathVariable("param1") String fromAddress) {
+	public String printWelcome(ModelMap model, @PathVariable("param1") String eMailAdress,@PathVariable("param2") String fromAddress) {
 		try {
 			mailService.sendMail(eMailAdress, fromAddress);
 			model.addAttribute("text", "Success");
