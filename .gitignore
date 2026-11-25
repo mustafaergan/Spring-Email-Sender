@@ -1,0 +1,23 @@
+# Maven
+target/
+
+# Eclipse
+.project
+.classpath
+.settings/
+.metadata/
+bin/
+build/
+
+# IntelliJ IDEA / VS Code
+.idea/
+*.iml
+.vscode/
+
+# Diğer
+*.log
+*.class
+.env
+.DS_Store
+Thumbs.db
+desktop.ini
